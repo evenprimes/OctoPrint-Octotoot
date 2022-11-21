@@ -101,7 +101,9 @@ class HelloWorldPlugin(
         ]
 
     def get_assets(self):
-        return dict(js=["js/octotoot.js"])
+        return dict(
+            js=["js/octotoot.js"], css=["css/octotoot.css"], less=["less/octotoot.less"]
+        )
 
 
 __plugin_pythoncompat__ = ">=3.7,<4"
